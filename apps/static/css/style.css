@@ -1,0 +1,437 @@
+/* 전체 기본 설정 */
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+}
+
+
+/* =========================
+   상단 헤더
+   ========================= */
+.dt-topbar {
+    width: 100%;
+    background: linear-gradient(90deg, #3a2a1a 0%, #6e4f29 45%, #b38b4d 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dt-topbar-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.dt-logo {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.dt-logo:hover {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.dt-topbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.dt-topbar-menu a,
+.dt-topbar-menu span {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.dt-topbar-menu a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   메인 영역
+   ========================= */
+.dt-page-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dt-main {
+    width: 100%;
+}
+
+
+/* =========================
+   이미지 신규 등록 버튼
+   ========================= */
+.dt-image-register-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.dt-register-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(90deg, #7b7b7b, #5f5f5f);
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.dt-register-btn:hover {
+    background: linear-gradient(90deg, #6a6a6a, #4e4e4e);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* =========================
+   이미지 카드
+   ========================= */
+.dt-image-card {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto 24px;
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+    padding: 16px 18px 22px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dt-image-username {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.dt-image-box {
+    text-align: center;
+}
+
+.dt-image-preview {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   로그인 / 회원가입 카드
+   ========================= */
+.auth-page {
+    width: 100%;
+    padding-top: 80px;
+}
+
+.auth-card {
+    width: 420px;
+    margin: 0 auto;
+    padding: 32px 36px 28px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.auth-title {
+    margin: 0 0 28px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111111;
+}
+
+.auth-form {
+    width: 100%;
+}
+
+.auth-field {
+    margin-bottom: 16px;
+}
+
+.auth-input {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0 12px;
+}
+
+.auth-btn-wrap {
+    margin-top: 8px;
+}
+
+.auth-btn {
+    width: 100%;
+    height: 42px;
+    background-color: #7b7b7b;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.auth-btn:hover {
+    background-color: #5f5f5f;
+}
+
+.auth-flash {
+    margin-bottom: 14px;
+    color: #d9534f;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+
+/* =========================
+   업로드 페이지
+   ========================= */
+.dt-upload-wrap {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.dt-upload-box {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dt-upload-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.dt-upload-desc {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    color: #444444;
+}
+
+.dt-upload-form {
+    width: 100%;
+}
+
+.dt-upload-field {
+    margin-bottom: 12px;
+}
+
+.dt-upload-error {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.dt-upload-divider {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 14px 0;
+}
+
+.dt-upload-btn-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dt-upload-submit {
+    padding: 6px 14px;
+    background-color: #7b7b7b;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.dt-upload-submit:hover {
+    background-color: #5f5f5f;
+}
+
+.dt-image-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.dt-detect-btn {
+    padding: 6px 12px;
+    background-color: #7b7b7b;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.dt-detect-btn:hover {
+    background-color: #5f5f5f;
+}
+
+.dt-content-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+}
+
+.dt-flash-list {
+    margin: 0 0 24px 0;
+    padding-left: 20px;
+}
+
+.dt-flash-item {
+    margin-bottom: 8px;
+    color: #b02a37;
+    font-size: 15px;
+}
+
+.dt-action-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.dt-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.dt-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.dt-card-username {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+}
+
+.dt-card-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.dt-card-actions form {
+    margin: 0;
+}
+
+.dt-card-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.dt-card-image {
+    max-width: 100%;
+    max-height: 520px;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.dt-card-footer {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid #eee;
+}
+
+.dt-tag {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #6c757d;
+    color: #fff;
+    font-size: 14px;
+}
+
+.dt-empty-tag {
+    color: #888;
+    font-size: 14px;
+}
+
+.dt-topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.dt-search-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.dt-search-form {
+    width: 100%;
+    max-width: 320px;
+    margin: 0;
+}
+
+.dt-search-input {
+    width: 100%;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.dt-search-input:focus {
+    border-color: #6f58c9;
+    box-shadow: 0 0 0 2px rgba(111, 88, 201, 0.15);
+}

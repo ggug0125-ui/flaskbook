@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}detector{% endblock %}</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+    />
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    />
+</head>
+<body>
+    <nav class="dt-topbar">
+    <div class="dt-topbar-inner">
+        <a href="{{ url_for('detector.index') }}" class="dt-logo">detector</a>
+
+        {% if url_for(request.endpoint) == url_for('detector.index') or url_for(request.endpoint) == url_for('detector.search') %}
+        <div class="dt-search-box">
+            <form method="GET" action="{{ url_for('detector.search') }}" class="dt-search-form">
+                {% if request.args.get("search") %}
+                    <input
+                        type="search"
+                        id="dt-search"
+                        class="dt-search-input"
+                        placeholder="검색"
+                        name="search"
+                        value="{{ request.args.get('search') }}"
+                    />
+                {% else %}
+                    <input
+                        type="search"
+                        id="dt-search"
+                        class="dt-search-input"
+                        placeholder="검색"
+                        name="search"
+                    />
+                {% endif %}
+            </form>
+        </div>
+        {% endif %}
+
+        <div class="dt-topbar-menu">
+            {% if current_user.is_authenticated %}
+                <span class="dt-topbar-text">flaskbook {{ current_user.username }}</span>
+                <a href="{{ url_for('auth.logout') }}" class="dt-topbar-link">로그아웃</a>
+            {% else %}
+                <a href="{{ url_for('auth.signup') }}" class="dt-topbar-link">신규 등록</a>
+                <a href="{{ url_for('auth.login') }}" class="dt-topbar-link">로그인</a>
+            {% endif %}
+        </div>
+    </div>
+    </nav>
+
+    <main class="dt-page-wrap">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+    />
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    />
+</head>
+<body>
+    <div class="auth-page">
+        <div class="auth-card auth-card-login">
+            <h1 class="auth-title">로그인</h1>
+
+            <form method="post" action="{{ url_for('auth.login') }}" class="auth-form">
+                {{ form.csrf_token }}
+
+                {% for message in get_flashed_messages() %}
+                    <div class="auth-flash">{{ message }}</div>
+                {% endfor %}
+
+                <div class="auth-field">
+                    {{ form.email(
+                        class="form-control auth-input",
+                        placeholder="메일 주소"
+                    ) }}
+                </div>
+
+                <div class="auth-field">
+                    {{ form.password(
+                        class="form-control auth-input",
+                        placeholder="비밀번호"
+                    ) }}
+                </div>
+
+                <div class="auth-btn-wrap">
+                    {{ form.submit(class="btn btn-secondary auth-btn") }}
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

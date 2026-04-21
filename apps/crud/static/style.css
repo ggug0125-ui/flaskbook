@@ -1,0 +1,85 @@
+/* 전체 기본 스타일 */
+body {
+    font-family: Arial, "맑은 고딕", sans-serif;
+    font-size: 14px;
+    color: #222;
+    background-color: #ffffff;
+    margin: 30px;
+}
+
+/* 제목 스타일 */
+h1,
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 링크 스타일 */
+a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+/* 플래시 메시지 스타일 */
+.flash-message {
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #c0c0c0;
+    background-color: #f8f8f8;
+    width: fit-content;
+}
+
+/* 테이블 테두리를 하나로 합침 */
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* 테이블 공통 테두리 */
+table,
+th,
+td {
+    border: 1px solid #c0c0c0;
+}
+
+/* 셀 안 여백 */
+th,
+td {
+    padding: 4px 8px;
+    text-align: left;
+    font-size: 13px;
+}
+
+/* 폼 문단 간격 */
+p {
+    margin: 10px 0;
+}
+
+/* 입력칸 스타일 */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 180px;
+    height: 24px;
+    padding: 2px 6px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+/* 버튼 스타일 */
+input[type="submit"],
+button {
+    padding: 2px 8px;
+    font-size: 12px;
+    border: 1px solid #888;
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+
+/* 오류 메시지 스타일 */
+.error-text {
+    color: red;
+    font-size: 12px;
+    margin: 2px 0 0 0;
+}
